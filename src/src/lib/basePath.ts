@@ -13,3 +13,10 @@ export function withBasePath(path: string) {
 	const normalizedPath = path.startsWith('/') ? path : `/${path}`
 	return basePathPrefix ? `${basePathPrefix}${normalizedPath}` : normalizedPath
 }
+
+export function stripBasePath(path: string) {
+	if (!basePathPrefix) return path || '/'
+	if (path === basePathPrefix || path === `${basePathPrefix}/`) return '/'
+	if (path.startsWith(`${basePathPrefix}/`)) return path.slice(basePathPrefix.length) || '/'
+	return path || '/'
+}
