@@ -17,7 +17,7 @@ concurrency:
 jobs:
   build:
     env:
-      SITE_BASE_PATH: /
+      SITE_BASE_PATH: /international-hospitality-accosiation/
     runs-on: ubuntu-latest
 
     steps:
