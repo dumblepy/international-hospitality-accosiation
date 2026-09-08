@@ -16,6 +16,8 @@ concurrency:
 
 jobs:
   build:
+    env:
+      SITE_BASE_PATH: /
     runs-on: ubuntu-latest
 
     steps:
