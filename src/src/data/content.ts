@@ -11,7 +11,7 @@ export const services = [
 export const audiences = ['ホテル・旅館', '飲食店', '観光事業者', '自治体', 'DMO・観光協会', 'インバウンド事業を始めたい企業']
 
 export const navigation = [
-	{ label: '協会について', href: '#about' },
-	{ label: '主な事業', href: '#services' },
-	{ label: '対象となる方', href: '#audience' },
+	{ label: '協会について', target: 'about' },
+	{ label: '主な事業', target: 'services' },
+	{ label: '対象となる方', target: 'audience' },
 ]
